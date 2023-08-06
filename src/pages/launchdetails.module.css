@@ -1,0 +1,22 @@
+.card{
+    background-color: rgb(25, 201, 255);
+    
+}
+
+.cardcontent{
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagepatch{
+    width: min-content;
+}
+
+.crewtitle{
+    text-align: center;
+}

@@ -1,8 +1,8 @@
 import './App.css';
 import {useState, useEffect} from "react";
-import Launches from "./components/Launches";
-import {Button, Container} from "@mui/material";
-
+import Launches from "./components/Launches/launches";
+import {Button, Container, Typography} from "@mui/material";
+import Header from './sections/header';
 function App() {
 
     const [data, setData] = useState([]);
@@ -88,7 +88,7 @@ function App() {
         };
 
     }
-
+ // make sure  to pass in the key from the card and then send the data as props thorugh router and in the component check if key is in the data props and use the response
     const fetchData = async (pageNumber) => {
         try {
             const response = await fetch(apiUrl, {
@@ -98,6 +98,8 @@ function App() {
                 },
                 body: JSON.stringify(getQueryBody(pageNumber)),
             });
+
+           
 
             if (!response.ok) {
                 console.log('Network response was not ok');
@@ -124,27 +126,37 @@ function App() {
         fetchData(currentPage - 1)
     }
 
+    
+
     return (
+        <>
+         <Container>
+        <Header/>
         <div>
 
-            <Container>
-                <p>Total Launches: {data["totalDocs"]}</p>
+           
+                               <p className='currentpage'> Total Launches: {data["totalDocs"]} <br/>Page {data["page"]} / {data["totalPages"]} </p>
                 {data["docs"] ? (
                     <div>
-                        <Launches launches={data["docs"]}/>
-                        <p>Page {data["page"]} / {data["totalPages"]} </p>
-                        <Button variant="outlined" onClick={prevPage} disabled={currentPage === 1}>Prev Page</Button>
-                        <Button variant="outlined" onClick={nextPage} disabled={currentPage === data["totalPages"]}>Next
-                           Page</Button>
+                        <Launches prevPage={prevPage}
+                        nextPage={nextPage}
+                        currentPage={currentPage}
+                        
+                        data={data} launches={data["docs"]}/>
+                        
+                       
+                        </div>
 
-                   </div>
                 ) : (
                     <div>Loading...</div>
                 )}
 
-            </Container>
+           
 
         </div>
+        </Container>
+        
+        </>
     );
 }
 export default App;

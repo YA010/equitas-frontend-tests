@@ -1,6 +1,4 @@
-.page{
-    height: 150px;
-    width:350px;
-    text-align: center;
-    padding-top: 10px;
+.cards{
+    margin-top: 1.50rem;
+    margin-bottom: 2.50rem;
 }

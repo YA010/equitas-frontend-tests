@@ -1,0 +1,10 @@
+.header{
+    border-bottom-left-radius: 0.50rem;
+    border-bottom-right-radius: 0.50rem;
+}
+
+.toolbar{
+    background-color: rgb(25, 201, 255);
+    border-bottom-left-radius: 0.50rem;
+    border-bottom-right-radius: 0.50rem;
+}

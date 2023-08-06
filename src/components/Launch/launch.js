@@ -15,12 +15,17 @@ const Launch = ({launch,onClick}) => {
           <Typography gutterBottom variant="h5" component="div" className={styles.launchTitle}>
           {launch.name}
           </Typography>
+         
           <Typography variant="body2" color="text.secondary">
-          Payloads:  {launch.payloads.map((launch) => ( <>
+          Payloads:  
+          
+          {launch.payloads.map((launch) => ( <>
           {launch.type} to {launch.orbit}:{launch.regime}
           <br/>
           </> ))}
+
           </Typography>
+         
           <Typography variant="body2" color="text.secondary">
           Flight Number: {launch.flight_number}
           </Typography>
@@ -30,6 +35,7 @@ const Launch = ({launch,onClick}) => {
           </Typography>
 
         </CardContent>
+        
         <CardActions>
           <Button onClick={() => onClick(launch.id)} size="small">Read More</Button>
           

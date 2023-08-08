@@ -2,7 +2,7 @@
 
 # !Important Disclaimer
 
-I finished this test within 1:45hr min , i had to pause my coding in betweeen, plus setting up hosting on netlify took some time 
+I finished this test within 1:45hr min (including setting up hosting and site) , i had to pause my coding in betweeen, plus setting up hosting on netlify took some time 
 
 
 Was i correct to assume i couldn't use any external libaries or get any npm modules except the ones preinstalled, I was going to utilize react router for pagination and rendering but didnt want to be disqualified

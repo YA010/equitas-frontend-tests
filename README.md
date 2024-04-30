@@ -1,15 +1,21 @@
-# Frontend Developer Tech Test For EQUITA
+# Frontend Developer Tech Test For Ortex 
+
 
 # !Important Disclaimer
 
-I finished this test within 1:45hr min (including setting up hosting and site) , i had to pause my coding in betweeen, plus setting up hosting on netlify took some time 
+I have different names "EQUITAs" yahumble yusuf, that i use to commit for various projects so fyi
+
+I finished this test within 1:45hr min , i had to pause my coding in betweeen, plus setting up plugins took some time 
 
 
-Was i correct to assume i couldn't use any external libaries or get any npm modules except the ones preinstalled, I was going to utilize react router for pagination and rendering but didnt want to be disqualified
+I was going to utilize react router for pagination and rendering but didnt want to be disqualified
 
 i mostly focused on functionality and features
 
-Also due to the constraints there were stuff i did that i dont normally do (rendering components within same page on click is not recomended but since i had no access to react router i had to resort to it) i hope some considerations can be made and im looking forward to talking about this 
+Also due to the constraints there were stuff i did that i dont normally do (rendering components within same page on click but since i didnt want to utilize react router for the aforementioned reason i had to resort to it)
+
+im looking forward to talking about this 
+
 
 Thank you and have a lovely weekend 
  
